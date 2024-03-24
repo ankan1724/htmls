@@ -1,0 +1,25 @@
+<div class="container">
+    <button id="hoverButton">Hover Here</button>
+    <div class="hiddenBox">Box content</div>
+  </div>
+<style>
+  .container {
+    position: relative;
+  }
+  
+  .hiddenBox {
+    display: none;
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #hoverButton:hover + .hiddenBox {
+    display: block;
+  }
+  </style>
+  
+  
